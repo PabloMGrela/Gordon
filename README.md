@@ -174,9 +174,10 @@ Gordon generates junit reports in the build directory / `test-results`, and an H
 
 Contributions are welcome. You can use the included `app` module to locally test changes to the Gordon plugin.
 1. Make changes to Gordon plugin
-2. Run `./gradlew publishToMavenLocal`
-3. Uncomment [com.banno.gordon in app plugins](https://github.com/Banno/Gordon/blob/master/app/build.gradle.kts#L6) and change the version to the one you just deployed
-4. Test your changes by running `./gradlew gordon` to run `app` tests using the locally-deployed Gordon
+2. Change the Gordon version on gordon-plugin/gradle.properties
+3. Run `./gradlew publishToMavenLocal`
+4. Uncomment [com.banno.gordon in app plugins](https://github.com/Banno/Gordon/blob/master/app/build.gradle.kts#L6) and change the version to the one you just deployed
+5. Test your changes by running `./gradlew gordon` to run `app` tests using the locally-deployed Gordon
 
 ## Why we named our test runner Gordon
 ![Gordon](https://user-images.githubusercontent.com/12698923/66937311-dbd1b580-f004-11e9-8faf-6dd2c7074485.png)
